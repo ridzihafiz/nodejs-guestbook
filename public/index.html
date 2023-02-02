@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar_wrapper">
+        <h1 class="brand">Ridzi & Utari</h1>
+        <!-- <h3>Buku Tamu</h3> -->
+        <menu class="navbar_menu">
+          <a href="#akad">akad</a>
+          <a href="#resepsi">resepsi</a>
+          <a href="#buku_tamu">buku tamu</a>
+          <a href="#map">map</a>
+        </menu>
+      </div>
+    </nav>
+
+    <main>
+      <div class="hero">
+        <p>Pernikahan</p>
+        <h1>Ridzi & Utari</h1>
+        <p>Nashville, 7 Maret 2023</p>
+        <button onclick="isiBukuTamu()">Isi Buku Tamu</button>
+      </div>
+
+      <section>
+        <h1>Daftar Tamu</h1>
+        <table class="daftar_tamu_table">
+          <th>
+            <tr>
+              <th>No</th>
+              <th>Nama Lengkap</th>
+              <th>Alamat</th>
+              <th style="text-align: center">Keterangan</th>
+            </tr>
+          </th>
+          <tbody id="tbody">
+            <!-- RENDER from JS -->
+            <!-- <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: center"></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
